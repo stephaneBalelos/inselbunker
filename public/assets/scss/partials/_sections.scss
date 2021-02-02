@@ -1,0 +1,76 @@
+.home-header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    background-image: url('../images/dj.jpg');
+    background-repeat: 0;
+    background-size: cover;
+    background-position: top;
+    
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(51, 51, 51, 0.39);
+    }
+
+    .home-header-content {
+        max-width: 100%;
+        z-index: 2;
+        .big-title {
+            color: #ffffff;
+            font-size: 4em;
+        }
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        .home-header-content {
+            max-width: 80%;
+            .big-title {
+                color: #ffffff;
+                font-size: 7em;
+            }
+        }
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        .home-header-content {
+            max-width: 60%;
+            .big-title {
+                color: #ffffff;
+                font-size: 7em;
+            }
+        }
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        .home-header-content {
+            max-width: 50%;
+            .big-title {
+                color: #ffffff;
+                font-size: 7em;
+            }
+        }
+    }
+}
+
+.about-me {
+    margin-bottom: 100px;
+}
+
+.contact {
+    margin-bottom: 100px;
+}
+

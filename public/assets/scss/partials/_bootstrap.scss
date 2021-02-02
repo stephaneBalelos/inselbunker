@@ -1,0 +1,95 @@
+// Forms
+
+.form-control {
+    border: 4px solid #333333;
+    background-color: transparent;
+    border-radius: 0;
+
+    &:focus {
+        border-color: #111;
+        box-shadow: 0 0 0 0.2rem #11111191;
+    }
+}
+
+button.btn.btn-light {
+    background-color: transparent;
+    border: 4px solid #333333;
+    border-radius: 0;
+
+    &:hover {
+        background-color: #333;
+        color: #ffffff;
+    }
+}
+
+.nav-pills {
+    background-color: white;
+    padding: 5px;
+
+    .nav-link {
+        border-radius: 0;
+        transition: all .2s ease;
+        color: #333;
+
+        &.active {
+            background-color: #333333;
+            color: #ffffff;
+
+            &:hover {
+                color: #ffffff;
+            }
+        }
+
+        &:not(.active):hover {
+            background-color: #33333346;
+            color: #ffffff;
+        }
+    }
+}
+
+.form-check {
+    input {
+        visibility: hidden;
+    }
+
+    input:checked ~ .custom-control-label::after {
+        border: 3px solid #333;
+    }
+
+    input:checked ~ .custom-control-label::before {
+        background-color: #333;
+        margin: 5px 5px;
+        height: 10px;
+        width: 10px;
+    }
+
+    .custom-control-label {
+        margin-left: 10px;
+        &::after {
+            background-color: transparent;
+            border: 4px solid #333;
+            height: 20px;
+            width: 20px;
+            transition: all .2s ease-in;
+            box-sizing: border-box;
+        }
+
+        &::before {
+            background-color: transparent;
+            height: 20px;
+            width: 20px;
+            transition: all .2s ease-in;
+            box-sizing: border-box;
+        }
+    }
+
+    &.is-invalid {
+        .custom-control-label::after {
+            border-color: #dc3545;
+        }
+    }
+}
+
+.img-fluid {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
