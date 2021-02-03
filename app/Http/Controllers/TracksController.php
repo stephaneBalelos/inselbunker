@@ -19,8 +19,8 @@ class TracksController extends Controller
 
     private function loadSCTracks() {
         $SCClientId = '95f22ed54a5c297b1c41f72d713623ef';
-        // 550345083 763848805
-        $SCuid = '550345083'; 
+        // 763848805
+        $SCuid = '763848805'; 
         return Http::get('http://api.soundcloud.com/users/' . $SCuid . '/tracks?client_id=' . $SCClientId);
     }
 }
